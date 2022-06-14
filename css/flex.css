@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap");
+
+main .flex_container {
+  width: 53%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+
+main .flex_container div {
+  padding: 2.5em 2em 2.3em 2em;
+}
+
+main .flex_container div button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  padding: 0.7em 1.5em 0.7em 1.5em;
+  border-radius: 2em;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 5em;
+  font-family: "Lexend Deca";
+}
+
+main .flex_container div button:hover {
+  background-color: transparent;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
+}
+
+main .flex_container div p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 15px;
+  line-height: 1.5em;
+  font-family: "Lexend Deca";
+}
+
+main .flex_container div h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+}
+/* for luxury box */
+main .flex_container .flex1 {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  background-color: hsl(31, 77%, 52%);
+}
+
+main .flex_container .flex1 button {
+  color: hsl(31, 77%, 52%);
+}
+
+/* for sedans box */
+main .flex_container .flex2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+main .flex_container .flex2 button {
+  color: hsl(184, 100%, 22%);
+}
+
+/* for suvs */
+main .flex_container .flex3 {
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+main .flex_container .flex3 button {
+  color: hsl(179, 100%, 13%);
+}
+
+footer {
+  background-color: white;
+  height: 10px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lexend Deca";
+}
+
+@media only screen and (max-width: 395px) {
+  main .flex_container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  main .flex_container .flex1 {
+    border-bottom-left-radius: 0px;
+  }
+  main .flex_container .flex3 {
+    border-top-right-radius: 0px;
+  }
+}

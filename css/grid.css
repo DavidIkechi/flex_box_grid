@@ -1,0 +1,74 @@
+body {
+  background-color: #262626;
+}
+
+main .wrapper {
+  width: 55%;
+  margin: 20vh auto;
+  background-color: black;
+  box-shadow: -4px 4px 4px 4px #0d0d0d;
+}
+main .grid_container {
+  height: 500px;
+  width: 80%;
+  background-color: black;
+  margin: 40px;
+  padding: 20px 0px 20px 0px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.7em;
+}
+
+main .grid_container div {
+  box-shadow: 2px 2px 2px 2px black;
+}
+
+/* grid for the top */
+main .grid_container .top {
+  display: grid;
+  grid-template-columns: 64% 34%;
+  grid-gap: 0.7em;
+}
+
+main .grid_container .top .top_left {
+  background-color: #eb5020;
+}
+
+main .grid_container .top .top_right {
+  background-color: #ffa401;
+}
+
+/* end grip for the top */
+
+/* grid for the bottom */
+
+main .grid_container .bottom {
+  display: grid;
+  grid-template-columns: 44% 54%;
+  grid-column-gap: 0.7em;
+}
+
+main .grid_container .bottom .bottom_left {
+  background-color: #05aa42;
+}
+
+main .grid_container .bottom .bottom_right {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 0.7em;
+}
+
+main .grid_container .bottom .bottom_right div {
+  background-color: #01aefd;
+}
+
+/* end grid for bottom */
+
+@media only screen and (max-width: 395px) {
+  main .wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca:wght@400&display=swap");
+
+* {
+  margin: 0px;
+}
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+}
+
+header .logo {
+  flex: 1;
+  padding: 13px;
+  padding-left: 7em;
+}
+
+header .logo a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  font-family: "Lexend Deca";
+}
+
+header nav {
+  padding: 10px;
+  margin: 9px;
+  padding-right: 7em;
+}
+header nav a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Lexend Deca";
+}
+
+header nav a.active {
+  color: black;
+  border: 2px solid orange;
+  border-radius: 10px;
+}
+
+header nav a:hover {
+  color: orange;
+}
+
+footer {
+  background-color: white;
+  height: 10px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  font-family: "Lexend Deca";
+}
+
+main {
+  margin: 30vh auto;
+  min-height: calc(60vh - 40px);
+}
+
+@media only screen and (max-width: 395px) {
+  header nav {
+    padding: 0px;
+    padding-top: 10px;
+    padding-right: 1em;
+  }
+  header nav a {
+    font-size: 12px;
+  }
+
+  header .logo {
+    padding: 0px;
+    padding-top: 20px;
+    padding-left: 4em;
+  }
+  header .logo a {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+}

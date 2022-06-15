@@ -73,7 +73,7 @@ main .grid_container .bottom .bottom_right div {
   }
   main .grid_container {
     width: 95%;
-    margin: 5px auto;
+    margin: 2px auto;
     height: 50vh;
   }
 }

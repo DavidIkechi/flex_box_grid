@@ -9,7 +9,7 @@ main .wrapper {
   box-shadow: -4px 4px 4px 4px #0d0d0d;
 }
 main .grid_container {
-  height: 500px;
+  height: 65vh;
   width: 80%;
   background-color: black;
   margin: 40px;
@@ -70,5 +70,10 @@ main .grid_container .bottom .bottom_right div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+  }
+  main .grid_container {
+    width: 90%;
+    margin: 10px;
+    height: 50vh;
   }
 }

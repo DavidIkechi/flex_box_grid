@@ -72,8 +72,8 @@ main .grid_container .bottom .bottom_right div {
     justify-content: space-around;
   }
   main .grid_container {
-    width: 90%;
-    margin: 10px;
+    width: 95%;
+    margin: 5px auto;
     height: 50vh;
   }
 }

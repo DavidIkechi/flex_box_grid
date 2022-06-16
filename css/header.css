@@ -66,7 +66,7 @@ main {
   min-height: calc(60vh - 40px);
 }
 
-@media only screen and (max-width: 395px) {
+@media only screen and (max-width: 375px) {
   header nav {
     padding: 0px;
     padding-top: 10px;
